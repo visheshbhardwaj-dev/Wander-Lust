@@ -1,0 +1,61 @@
+<% layout("/layouts/boilerplate") %>
+
+    <div class="col-8 mt-3 mb-3">
+
+
+        <h3>Enter details</h3>
+        <form enctype="multipart/form-data" class="needs-validation" novalidate method="post" action="/listings/<%= foundListing._id %>?_method=PUT">
+            <div class="md-3">
+                <label for="title" class="form-label">Title:</label>
+                <input required class="form-control" name="listing[title]" value="<%= foundListing.title %>"
+                    type="text">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid title</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea required class="form-control"
+                    name="listing[description]"><%= foundListing.description %></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid description</div>
+            </div>
+
+            <div class="mb-3">
+                <label for=" image" class="form-label">Upload new Image</label>
+                <input  class="form-control" name="listing[image]" type="file" >
+            </div>
+
+            <div class="row">
+
+                <div class="mb-3 col-md-5">
+                    <label for="price" class="form-label">Price:</label>
+                    <input required class="form-control" name="listing[price]" type="number"
+                        value="<%= foundListing.price %>">
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Enter a valid price</div>
+                </div>
+
+                <div class="mb-3 col-md-7">
+                    <label for="location" class="form-label">Location:</label>
+                    <input required class="form-control" type="text" name="listing[location]"
+                        value="<%= foundListing.location %>">
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Enter a valid location</div>
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="country" class="form-label">Country:</label>
+                <input required class="form-control" type=" text" name="listing[country]"
+                    value="<%= foundListing.country %>">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid country</div>
+            </div>
+
+
+
+            <button class=" btn btn-dark add-btn">Edit</button>
+        </form>
+    </div>

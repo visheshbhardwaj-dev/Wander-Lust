@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex:1;
+}
+.navbar {
+    height: 5rem;
+}
+
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+
+
+.f-info-link a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-link a:hover {
+    text-decoration: underline;
+
+}
+
+.f-info-link,.f-info-socials,.f-info-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i {
+
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info {
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: rgb(237, 230, 230);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+}
+
+.card{
+    border: none !important;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+}
+
+
+.card-body {
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background: white;
+}
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+
+}
+
+.show-img{
+    height: 30vh;
+}
+
+.review-card {
+  border: 1.5px solid #e5e7eb !important; /* soft neutral gray */
+  border-radius: 14px;
+  background-color: #ffffff;
+  transition: 
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.review-card:hover {
+  border-color: #c7cbd1;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.review-card .card-body {
+  padding: 1.2rem 1.3rem;
+}
+
+
+
