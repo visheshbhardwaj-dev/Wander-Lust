@@ -18,7 +18,7 @@ const passport = require("passport");
 const localStrategy = require("passport-local");
 const User = require("./models/user.js");
 const multer  = require('multer')
-const MongoStore = require("connect-mongo");
+const {MongoStore} = require("connect-mongo");
 
 const upload = multer({ dest: 'uploads/' })
 
@@ -46,7 +46,7 @@ async function main() {
     await mongoose.connect(DbURL);
 
 }
-const store = MongoStore.createKrupteinAdapter({
+const store = MongoStore.create({
     mongoUrl:DbURL,
     touchAfter: 24*60*60,
     crypto:{
@@ -136,6 +136,7 @@ app.use((err, req, res, next) => {
 
 
 
-app.listen(8080, () => {
-    console.log("listening on port 8080");
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
