@@ -35,50 +35,59 @@
 </style>
 <div class="container mt-3">
   <div class="filters">
-  <div class="filter">
-    <div><i class="fa-solid fa-fire"></i></div>
-    <p>Trending</p>
-  </div>
-  <div class="filter">
+
+  <a href="/listings/category/Rooms" class="filter">
     <div><i class="fa-solid fa-bed"></i></div>
     <p>Rooms</p>
-  </div>
-   <div class="filter">
-    <div><i class="fa-solid fa-monument"></i></div>
-    <p>Iconic cities</p>
-  </div>
-  <div class="filter">
+  </a>
+       
+     <a href="/listings/category/Iconic_cities" class="filter">
+      <div><i class="fa-solid fa-monument"></i></div>
+      <p>Iconic cities</p>
+    </a>
+
+  <a href="/listings/category/Beaches" class="filter">
     <div><i class="fa-solid fa-umbrella-beach"></i></div>
     <p>Beaches</p>
-  </div>
-   <div class="filter">
+ </a>
+
+     <a href="/listings/category/Mountains" class="filter">
     <div><i class="fa-solid fa-mountain-sun"></i></div>
     <p>Mountains</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-solid fa-person-swimming"></i></div>
+    </a>
+
+     <a href="/listings/category/Amazing_pools" class="filter">
+    <div><i class="fa-solid fa-mountain-sun"></i></div>
     <p>Amazing pools</p>
-  </div>
-   <div class="filter">
+    </a>
+
+    <a href="/listings/category/Camping" class="filter">
     <div><i class="fa-solid fa-campground"></i></div>
     <p>Camping</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-solid fa-shop"></i></div>
-    <p>Cabin</p>
-  </div>
-    <div class="filter">
-    <div><i class="fa-solid fa-igloo"></i></div>
-    <p>Igloo</p>
-  </div>
-   <div class="filter">
+    </a>
+ 
+    <a href="/listings/category/Cabins" class="filter">
+     <div><i class="fa-solid fa-shop"></i></div>
+     <p>Cabin</p>
+     </a>
+
+   <a href="/listings/category/Igloo" class="filter">
+     <div><i class="fa-solid fa-igloo"></i></div>
+     <p>Igloo</p>
+    </a> 
+
+  <a href="/listings/category/Farms" class="filter">
     <div><i class="fa-solid fa-cow"></i></div>
     <p>Farms</p>
-  </div>
-    <div class="filter">
-    <div><i class="fa-solid fa-house"></i></div>
+    </a>
+  
+
+    <a href="/listings/category/Apartments" class="filter">
+       <div><i class="fa-solid fa-house"></i></div>
     <p>Apartments</p>
-  </div>
+    </a>
+   
+    
   
   <!-- add more .filter items here -->
    <div class="tax-switch">
@@ -111,6 +120,7 @@
             <p class="card-text mb-3">
               ₹ <%= listing.price.toLocaleString("en-IN") %>/night
               <i class="tax-info" > &nbsp;  +18% GST</i>
+             
             </p>
 
             
@@ -121,6 +131,7 @@
     <% } %>
 
   </div>
+  
 </div>
 
 <script>

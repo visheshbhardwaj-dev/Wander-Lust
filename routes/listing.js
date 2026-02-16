@@ -51,4 +51,7 @@ route.put("/:id", isLoggedIn, isOwner, upload.single("listing[image]"),validate,
 //delete route
 route.delete("/:id", isOwner, wrapAsync(listingsController.deleteListing));
 
+//category route
+route.get("/category/:category",wrapAsync(listingsController.categoryListing))
+
 module.exports = route;
